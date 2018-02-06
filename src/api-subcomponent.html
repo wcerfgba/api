@@ -1,0 +1,32 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="api-subcomponent">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class ApiSubcomponent extends Polymer.Element {
+      static get is() { return 'api-subcomponent'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'cheese'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(ApiSubcomponent.is, ApiSubcomponent);
+  </script>
+</dom-module>

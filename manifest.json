@@ -1,0 +1,6 @@
+{
+  "name": "api",
+  "short_name": "api",
+  "start_url": "/",
+  "display": "standalone"
+}

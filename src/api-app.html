@@ -1,0 +1,25 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="./api-subcomponent.html">
+
+<dom-module id="api-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <api-subcomponent></api-subcomponent>
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class ApiApp extends Polymer.Element {
+      static get is() { return 'api-app'; }
+    }
+
+    window.customElements.define(ApiApp.is, ApiApp);
+  </script>
+</dom-module>
